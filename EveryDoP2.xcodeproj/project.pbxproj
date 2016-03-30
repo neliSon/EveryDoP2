@@ -14,6 +14,10 @@
 		1B8CEC191CAC5178005447F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8CEC171CAC5177005447F4 /* Main.storyboard */; };
 		1B8CEC1B1CAC5178005447F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B8CEC1A1CAC5178005447F4 /* Assets.xcassets */; };
 		1B8CEC1E1CAC5178005447F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8CEC1C1CAC5178005447F4 /* LaunchScreen.storyboard */; };
+		1B8CEC2C1CAC5368005447F4 /* TodoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B8CEC2A1CAC5368005447F4 /* TodoModel.xcdatamodeld */; };
+		1B8CEC311CAC5473005447F4 /* Todo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8CEC2E1CAC5473005447F4 /* Todo+CoreDataProperties.m */; };
+		1B8CEC321CAC5473005447F4 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8CEC301CAC5473005447F4 /* Todo.m */; };
+		1B8CEC351CAC61FC005447F4 /* TodoCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B8CEC341CAC61FC005447F4 /* TodoCoreDataStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,13 @@
 		1B8CEC1A1CAC5178005447F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B8CEC1D1CAC5178005447F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B8CEC1F1CAC5178005447F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B8CEC2B1CAC5368005447F4 /* TodoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoModel.xcdatamodel; sourceTree = "<group>"; };
+		1B8CEC2D1CAC5473005447F4 /* Todo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Todo+CoreDataProperties.h"; path = "../Todo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		1B8CEC2E1CAC5473005447F4 /* Todo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Todo+CoreDataProperties.m"; path = "../Todo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		1B8CEC2F1CAC5473005447F4 /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Todo.h; path = ../Todo.h; sourceTree = "<group>"; };
+		1B8CEC301CAC5473005447F4 /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Todo.m; path = ../Todo.m; sourceTree = "<group>"; };
+		1B8CEC331CAC61FC005447F4 /* TodoCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoCoreDataStack.h; sourceTree = "<group>"; };
+		1B8CEC341CAC61FC005447F4 /* TodoCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoCoreDataStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +72,10 @@
 		1B8CEC0A1CAC5177005447F4 /* EveryDoP2 */ = {
 			isa = PBXGroup;
 			children = (
-				1B8CEC0E1CAC5177005447F4 /* AppDelegate.h */,
-				1B8CEC0F1CAC5177005447F4 /* AppDelegate.m */,
-				1B8CEC111CAC5177005447F4 /* MasterViewController.h */,
-				1B8CEC121CAC5177005447F4 /* MasterViewController.m */,
-				1B8CEC141CAC5177005447F4 /* DetailViewController.h */,
-				1B8CEC151CAC5177005447F4 /* DetailViewController.m */,
-				1B8CEC171CAC5177005447F4 /* Main.storyboard */,
+				1B8CEC281CAC5212005447F4 /* Application */,
+				1B8CEC271CAC520A005447F4 /* File System */,
+				1B8CEC261CAC5203005447F4 /* User Defaults */,
+				1B8CEC251CAC51F9005447F4 /* Core Data */,
 				1B8CEC1A1CAC5178005447F4 /* Assets.xcassets */,
 				1B8CEC1C1CAC5178005447F4 /* LaunchScreen.storyboard */,
 				1B8CEC1F1CAC5178005447F4 /* Info.plist */,
@@ -82,6 +90,56 @@
 				1B8CEC0C1CAC5177005447F4 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B8CEC251CAC51F9005447F4 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				1B8CEC171CAC5177005447F4 /* Main.storyboard */,
+				1B8CEC331CAC61FC005447F4 /* TodoCoreDataStack.h */,
+				1B8CEC341CAC61FC005447F4 /* TodoCoreDataStack.m */,
+				1B8CEC111CAC5177005447F4 /* MasterViewController.h */,
+				1B8CEC121CAC5177005447F4 /* MasterViewController.m */,
+				1B8CEC141CAC5177005447F4 /* DetailViewController.h */,
+				1B8CEC151CAC5177005447F4 /* DetailViewController.m */,
+				1B8CEC2A1CAC5368005447F4 /* TodoModel.xcdatamodeld */,
+				1B8CEC291CAC527F005447F4 /* Managed Objects */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		1B8CEC261CAC5203005447F4 /* User Defaults */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "User Defaults";
+			sourceTree = "<group>";
+		};
+		1B8CEC271CAC520A005447F4 /* File System */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "File System";
+			sourceTree = "<group>";
+		};
+		1B8CEC281CAC5212005447F4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1B8CEC0E1CAC5177005447F4 /* AppDelegate.h */,
+				1B8CEC0F1CAC5177005447F4 /* AppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		1B8CEC291CAC527F005447F4 /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+				1B8CEC2D1CAC5473005447F4 /* Todo+CoreDataProperties.h */,
+				1B8CEC2E1CAC5473005447F4 /* Todo+CoreDataProperties.m */,
+				1B8CEC2F1CAC5473005447F4 /* Todo.h */,
+				1B8CEC301CAC5473005447F4 /* Todo.m */,
+			);
+			name = "Managed Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,10 +213,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8CEC2C1CAC5368005447F4 /* TodoModel.xcdatamodeld in Sources */,
+				1B8CEC311CAC5473005447F4 /* Todo+CoreDataProperties.m in Sources */,
 				1B8CEC101CAC5177005447F4 /* AppDelegate.m in Sources */,
 				1B8CEC131CAC5177005447F4 /* MasterViewController.m in Sources */,
 				1B8CEC0D1CAC5177005447F4 /* main.m in Sources */,
+				1B8CEC351CAC61FC005447F4 /* TodoCoreDataStack.m in Sources */,
 				1B8CEC161CAC5177005447F4 /* DetailViewController.m in Sources */,
+				1B8CEC321CAC5473005447F4 /* Todo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +371,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1B8CEC2A1CAC5368005447F4 /* TodoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1B8CEC2B1CAC5368005447F4 /* TodoModel.xcdatamodel */,
+			);
+			currentVersion = 1B8CEC2B1CAC5368005447F4 /* TodoModel.xcdatamodel */;
+			path = TodoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1B8CEC001CAC5177005447F4 /* Project object */;
 }
